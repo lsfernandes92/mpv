@@ -1,23 +1,46 @@
 .container {
-  border: 2px solid black;
-  border-radius: 2px;
-  padding: 2em 3em;
-  width: 400px;
+  display: flex;
+  height: 100vh;
+}
+
+.logo {
+  height: 20px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 15em;
+  left: 5%;
+  transform: rotate(-90deg);
 }
 
-.container img {
-  width: 2em;
+.list-container {
+  display: flex;
+  padding: 0 20em;
+  padding-top: 10em;
 }
 
-ul { margin-top: 0;}
-
-li {
+li, a, p {
+  font-family: var(--main-font);
   font-size: 16px;
-  list-style-image: url("./images/folder-solid.svg");
-}::marker {
-  font-size: 3em;
 }
+
+ul { padding-left: 5em; }
+
+p { 
+  padding-left: 1em; 
+  color: black; 
+}
+
+li { 
+  padding-bottom: 1em;
+  list-style-image: url("./images/dot_item.svg");
+}
+
+a { 
+  text-decoration: none;
+  color: black; 
+}
+
+a:hover { color: var(--hover-font-color); }
+
+.drawings { padding-left: 8em; }
+
+.materials, .products { padding-left: 4em; }

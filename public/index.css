@@ -1,13 +1,3 @@
-@font-face {
-  font-family: "Engravers Gothic BT";
-  src: url("./assets/EngraversGothicBT-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Engravers Gothic BT Bold";
-  src: url("./assets/EngraversGothicBT-Bold.ttf");
-}
-
 .login-container {
   width: 600px;
   position: absolute;
@@ -24,7 +14,7 @@
 }
 
 .login-container p {
-  font-family: "Engravers Gothic BT";
+  font-family: var(--main-font);
   font-size: 16px;
   padding-top: 10em;
 }
@@ -33,10 +23,10 @@
   width: 600px;
   text-align: center;
   border: none;
-  color: #BABABA;
+  color: var(--hover-font-color);
 }::placeholder {
   text-align: center;
-  color: #BABABA;
+  color: var(--hover-font-color);
 }:focus {
   outline: none;
 }
@@ -45,14 +35,16 @@
   font-size: 100px;
 }
 
-.login-container button {
+.login {
   border: none;
-  font-family: "Engravers Gothic BT Bold";
+  font-family: var(--bold-font);
   font-size: 32px;
-  color: #BABABA;
+  color: var(--hover-font-color);
+  background-color: transparent;
+  padding-top: 2em;
 }
 
-.login-container button:hover {
+.login:hover {
   color: black;
   cursor: pointer;
 }

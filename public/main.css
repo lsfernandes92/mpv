@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Engravers Gothic BT";
+  src: url("./assets/EngraversGothicBT-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Engravers Gothic BT Bold";
+  src: url("./assets/EngraversGothicBT-Bold.ttf");
+}
+
+:root {
+  --main-font: "Engravers Gothic BT", sans-serif;
+  --bold-font: "Engravers Gothic BT Bold", sans-serif;
+  --hover-font-color: #BABABA;
+}

@@ -44,23 +44,26 @@ const projectsProducts = [
   "Projeto Bolsas Bo.Bô",
 ]
 
-const container = document.querySelector(".container")
+const collections = document.querySelector(".collections")
+const projects = document.querySelector(".projects")
+const materials = document.querySelector(".materials")
+const products = document.querySelector(".products")
 
 window.onload = () => { if (document.referrer === "") self.location="./index.html" }
 
-const appendPDFs = (category, pdfsNames) => {
+const appendPDFs = (category, pdfsNames, element) => {
   const imgElement = document.createElement("img")
   const pElement = document.createElement("p")
   const ulElement = document.createElement("ul")
 
-  imgElement.src = "./images/folder-open-solid.svg"
+  imgElement.src = "./images/folder_open.svg"
 
   pElement.textContent = category
   pElement.style.cssText = "display:inline"
 
-  container.append(imgElement)
-  container.append(pElement)
-  container.append(ulElement)
+  element.append(imgElement)
+  element.append(pElement)
+  element.append(ulElement)
 
   pdfsNames.forEach(pdf => {
     const liElement = document.createElement("li")
@@ -74,7 +77,7 @@ const appendPDFs = (category, pdfsNames) => {
   })
 }
 
-appendPDFs("Desenhos, Projetos", drawingsAndProjects)
-appendPDFs("Fotos Coleções", collectionPhotos)
-appendPDFs("Projetos - Materiais", projectsMeterials)
-appendPDFs("Projetos - Produtos", projectsProducts)
+appendPDFs("COLEÇÕES", collectionPhotos, collections)
+appendPDFs("DESENHOS, PROJETOS", drawingsAndProjects, projects)
+appendPDFs("MATERIAIS", projectsMeterials, materials)
+appendPDFs("PRODUTOS", projectsProducts, products)
