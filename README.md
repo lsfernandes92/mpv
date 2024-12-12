@@ -1,1 +1,0 @@
-# MPV (Maya portifolio viewer)

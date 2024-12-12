@@ -1,0 +1,23 @@
+.container {
+  border: 2px solid black;
+  border-radius: 2px;
+  padding: 2em 3em;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container img {
+  width: 2em;
+}
+
+ul { margin-top: 0;}
+
+li {
+  font-size: 16px;
+  list-style-image: url("./images/folder-solid.svg");
+}::marker {
+  font-size: 3em;
+}
