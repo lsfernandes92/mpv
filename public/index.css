@@ -1,38 +1,58 @@
-.login-form {
-  border: 2px solid black;
-  border-radius: 2px;
-  padding: 2em 3em;
-  width: 400px;
+@font-face {
+  font-family: "Engravers Gothic BT";
+  src: url("./assets/EngraversGothicBT-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Engravers Gothic BT Bold";
+  src: url("./assets/EngraversGothicBT-Bold.ttf");
+}
+
+.login-container {
+  width: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.login-form h1{
-  margin-top: 0;
-  text-align: center;
+.login-container img {
+  width: 400px;
 }
 
-.password, .login {
-  padding: 1em 2em;
-  border: 2px solid black;
-  border-radius: 2px;
+.login-container p {
+  font-family: "Engravers Gothic BT";
   font-size: 16px;
+  padding-top: 10em;
 }
 
-.password {
-  width: 200px;
+.login-container input {
+  width: 600px;
   text-align: center;
+  border: none;
+  color: #BABABA;
 }::placeholder {
   text-align: center;
+  color: #BABABA;
+}:focus {
+  outline: none;
 }
 
-.login {
-  background-color: black;
-  color: white;
-  transition: background 1s;
-}:hover {
-  background-color: white;
+.login-container input {
+  font-size: 100px;
+}
+
+.login-container button {
+  border: none;
+  font-family: "Engravers Gothic BT Bold";
+  font-size: 32px;
+  color: #BABABA;
+}
+
+.login-container button:hover {
   color: black;
+  cursor: pointer;
 }

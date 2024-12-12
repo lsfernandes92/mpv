@@ -46,6 +46,8 @@ const projectsProducts = [
 
 const container = document.querySelector(".container")
 
+window.onload = () => { if (document.referrer === "") self.location="./index.html" }
+
 const appendPDFs = (category, pdfsNames) => {
   const imgElement = document.createElement("img")
   const pElement = document.createElement("p")
