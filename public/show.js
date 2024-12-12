@@ -49,7 +49,12 @@ const projects = document.querySelector(".projects")
 const materials = document.querySelector(".materials")
 const products = document.querySelector(".products")
 
-window.onload = () => { if (document.referrer === "") self.location="./index.html" }
+window.addEventListener("DOMContentLoaded", () => {
+   if (document.referrer === "") {
+    document.body.style.cssText = "display:none"
+    self.location="./index.html"
+   }
+})
 
 const appendPDFs = (category, pdfsNames, element) => {
   const imgElement = document.createElement("img")
