@@ -10,7 +10,7 @@ inputPassword.addEventListener("input", () => {
 buttonLogin.addEventListener("click", () => {
   if (inputPassword.value === ""){
     alert("Favor preencher a senha!")
-  } else if (inputPassword.value !== "acab") {
+  } else if (inputPassword.value !== "zbya91") {
     alert("Senha incorreta favor tentar novamente :)")
   } else {
     window.location.replace("show.html")
