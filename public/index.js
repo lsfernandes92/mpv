@@ -3,7 +3,6 @@ const buttonLogin = document.querySelector(".login")
 
 inputPassword.addEventListener("input", () => {
   buttonLogin.style.color = "black"
-
   if (inputPassword.value.trim() === "") buttonLogin.style.color = "#BABABA"
 })
 
