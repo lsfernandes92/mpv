@@ -1,3 +1,5 @@
+html, body { overflow-x: hidden; }
+
 .login-container {
   display: flex;
   flex-direction: column;
@@ -25,6 +27,7 @@
   color: var(--hover-font-color);
 }::placeholder {
   text-align: center;
+  font-size: 100px;
   color: var(--hover-font-color);
 }:focus {
   outline: none;
@@ -44,9 +47,10 @@
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .logo {
-    max-width: 100%;
+    max-width: 80%;
+    margin-top: 6em;
   }
 
   .informative-text {
@@ -55,6 +59,8 @@
   }
 
   .password {
+    font-size: 80px;
+  }::placeholder {
     font-size: 80px;
   }
 
